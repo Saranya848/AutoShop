@@ -1,11 +1,9 @@
 package com.ownautoshop;
 
-import java.util.*;
-
 /**
- * Truck extends Car to obtain properties of super class
- * Method for updated getsaleprice
- * Calling updated getSaleprice method
+ * Truck extends Car to obtain properties of super class Method for updated
+ * getsaleprice Calling updated getSaleprice method
+ * 
  * @author king
  *
  */
@@ -18,31 +16,22 @@ public class Truck extends Car {
 		Truck.weight = weight;
 	}
 
-	
 	/**
 	 * Method for updated getsaleprice
 	 * 
 	 * Condition applied according to thier weight
+	 * 
 	 * @param regularPrice - actual price
 	 * @return
 	 */
-	public static double getSalePrice(double regularPrice) {
+	public double getSalePrice() {
 		if (weight > 2000) {
-			sales = Car.getSalePrice(regularPrice) - (0.1 * Car.getSalePrice(regularPrice));
-			return sales;
+			sales = super.getSalePrice() - (0.1 * super.getSalePrice());
+			System.out.println(sales);
 		} else
-			sales = Car.getSalePrice(regularPrice) - (0.2 * Car.getSalePrice(regularPrice));
-		return sales;
+			sales = super.getSalePrice() - (0.1 * super.getSalePrice());
+		System.out.println(sales);
+		return 0;
 	}
 
-	public static void main(System[] args) {
-		Scanner sc = new Scanner(System.in);
-		int regularPrice = sc.nextInt();
-		
-		/**
-		 * Calling updated getSaleprice method
-		 */
-		getSalePrice(regularPrice);
-		sc.close();
-	}
 }
