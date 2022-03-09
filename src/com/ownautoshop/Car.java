@@ -73,7 +73,13 @@ public class Car {
 		this.setColor(color);
 	}
 
-	public static double getSalePrice(double regularPrice) {
+	/**
+	 * method for getsalesprice
+	 * 
+	 * @return
+	 */
+	public double getSalePrice() {
 		return regularPrice;
+
 	}
 }
