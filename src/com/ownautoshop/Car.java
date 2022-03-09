@@ -4,7 +4,11 @@ public class Car {
 	private int speed;
 	private double regularPrice;
 	private String color;
-
+/**
+ * getter method for color, regularprice, speed
+ * setter method for color, regularprice, speed
+ * method for getsalesprice
+ */
 	/**
 	 * getter method for color of the car
 	 * 
@@ -73,7 +77,13 @@ public class Car {
 		this.setColor(color);
 	}
 
-	public static double getSalePrice(double regularPrice) {
+	/**
+	 * method for getsalesprice
+	 * 
+	 * @return
+	 */
+	public double getSalePrice() {
 		return regularPrice;
+
 	}
 }
