@@ -29,7 +29,7 @@ public class Truck extends Car {
 			sales = super.getSalePrice() - (0.1 * super.getSalePrice());
 			System.out.println(sales);
 		} else
-			sales = super.getSalePrice() - (0.1 * super.getSalePrice());
+			sales = super.getSalePrice() - (0.2 * super.getSalePrice());
 		System.out.println(sales);
 		return 0;
 	}
